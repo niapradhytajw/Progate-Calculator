@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Dark &amp; Light Mode</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/282a4c6277.js" crossorigin="anonymous"></script>
+    <title>Calculator With Dark and Light Mode</title>
+</head>
+    <html class="main">
+        <div class="heading">
+            
+            <span><img height="45" width="43" src="logo.png"></span>
+            <span>CALCULATOR</span>
+            <span>
+                <label>
+                    <input type="checkbox" name="theme">
+                    <span class="btn"></span>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </span>
+        </div>
+        <div id="result">
+            <div class="history">
+                <p id="history-value"></p>
+            </div>
+            <div class="output">
+                <p id="output-value"></p>
+            </div>
+        </div>
+    <div id="keyboard">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0" class="calculator-screen" value="0" disabled/>
+        </div>
+        <div class="group">
+            
+            <div class="calculator-keys">
+                <div class="top-section">
+                    <button class="all-clear">AC</button>
+                    <button class="negative" value="+/-">+/-</button>
+                    <button class="percentage" value="%">%</button>
+                   <!--<button class="operator" value="/">&divide;</button>--> 
+                </div>
+                <div class="middle-section">
+                    <div>
+                        <button class="number" value="7">7</button>
+                        <button class="number" value="8">8</button>
+                        <button class="number" value="9">9</button>
+                       <!-- <button class="operator" value="*">&times;</button> -->
+                    </div>
+                
+                    <div>
+                        <button class="number" value="4">4</button>
+                        <button class="number" value="5">5</button>
+                        <button class="number" value="6">6</button>
+                       <!-- <button class="operator" value="-">-</button>-->
+                    </div>
+                    <div>
+                        <button class="number" value="1">1</button>
+                        <button class="number" value="2">2</button>
+                        <button class="number" value="3">3</button>
+                        <!--<button class="operator" value="+">+</button> -->
+                    </div>
+                    <div>
+                        <button class="decimal" value=".">.</button>
+                        <button class="number zero-btn" value="0">0</button>
+                        <button class="backspace" value="C" id="ce" onclick="backspc()" >
+                            <i class="fas fa-backspace"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="side-section">
+                    <button class="operator" value="/">&divide</button>  
+                    <button class="operator" value="*">&times</button>  
+                    <button class="operator" value="-">-</button> 
+                    <button class="operator" value="+">+</button> 
+                    <button class="equal-sign" value="=">=</button></td>
+                </div>
+                   <!--<div>
+                        <button class="decimal" value=".">.</button>
+                        <button class="number zero-btn" value="0">0</button>
+                        <button class="backspace">
+                            <i class="fas fa-backspace"></i>
+                        </button>
+                        <button class="equal-sign">=</button>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <audio autoplay="true" id="audio_a">
+        <source src="btn--sound.mp3" type="audio/mpeg">
+    </audio>
+    <script type="text/javascript" src="script.js"></script>
+</html>
+</body>
+</html>
